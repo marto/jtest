@@ -7,7 +7,7 @@ public interface Cache<K,V> {
 	/**
 	 * @return a cached value from the cache, null if none available
 	 */
-	public V get();
+	public V get(K key);
 
 	/**
 	 * Put an entry into the cache
